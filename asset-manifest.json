@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/joaonetocastro.github.io/static/css/main.68a1bfbc.chunk.css",
+    "main.js": "/joaonetocastro.github.io/static/js/main.fec61fdf.chunk.js",
+    "main.js.map": "/joaonetocastro.github.io/static/js/main.fec61fdf.chunk.js.map",
+    "runtime-main.js": "/joaonetocastro.github.io/static/js/runtime-main.ad96e239.js",
+    "runtime-main.js.map": "/joaonetocastro.github.io/static/js/runtime-main.ad96e239.js.map",
+    "static/js/2.7b6d3a8e.chunk.js": "/joaonetocastro.github.io/static/js/2.7b6d3a8e.chunk.js",
+    "static/js/2.7b6d3a8e.chunk.js.map": "/joaonetocastro.github.io/static/js/2.7b6d3a8e.chunk.js.map",
+    "index.html": "/joaonetocastro.github.io/index.html",
+    "precache-manifest.5b7782facebaecbb14506e0f0edf3d7d.js": "/joaonetocastro.github.io/precache-manifest.5b7782facebaecbb14506e0f0edf3d7d.js",
+    "service-worker.js": "/joaonetocastro.github.io/service-worker.js",
+    "static/css/main.68a1bfbc.chunk.css.map": "/joaonetocastro.github.io/static/css/main.68a1bfbc.chunk.css.map",
+    "static/js/2.7b6d3a8e.chunk.js.LICENSE.txt": "/joaonetocastro.github.io/static/js/2.7b6d3a8e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad96e239.js",
+    "static/js/2.7b6d3a8e.chunk.js",
+    "static/css/main.68a1bfbc.chunk.css",
+    "static/js/main.fec61fdf.chunk.js"
+  ]
+}
