@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@material-ui/core';
 
-export default function AboutMe(){
+export function AboutMe(){
   return(
     <Box>
       <Typography variant="h5" component="h1">

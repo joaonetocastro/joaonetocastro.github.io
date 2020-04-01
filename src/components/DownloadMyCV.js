@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button , Link} from '@material-ui/core';
 
-export default function DownloadMyCV(){
+export function DownloadMyCV(){
   return(
     <Box display="flex" flexDirection="column" alignItems="center">
       <Typography variant="h5" component="h1">

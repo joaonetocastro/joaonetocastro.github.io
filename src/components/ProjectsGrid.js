@@ -3,7 +3,7 @@ import {Box, Card, CardContent, CardHeader, Typography, Grid, Link, CardActions,
 import {makeStyles} from '@material-ui/core/styles';
 import {projects} from '../helper';
 
-export default function ProjectsGrid(){
+export function ProjectsGrid(){
   const classes = makeStyles({
     root: {
       flexGrow: 1

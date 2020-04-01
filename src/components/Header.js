@@ -3,7 +3,7 @@ import {AppBar, Toolbar, Typography, Link, IconButton,} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import {LinkedIn as LinkedInIcon, GitHub as GitHubIcon} from '@material-ui/icons';
 
-export default function Header(){
+export function Header(){
   const classes = makeStyles({
     title: {
       flexGrow: 1,

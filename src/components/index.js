@@ -1,8 +1,6 @@
-const Header = require('./Header');
-const MySkills = require('./MySkills');
-const ProjectsGrid = require('./ProjectsGrid');
-const DownloadMyCV = require('./DownloadMyCV');
-const LetsWorkTogether = require('./LetsWorkTogether');
-const AboutMe = require('./AboutMe');
-
-module.export = {Header, MySkills, ProjectsGrid, DownloadMyCV, LetsWorkTogether, AboutMe};
+export {Header} from './Header';
+export {MySkills} from './MySkills';
+export {ProjectsGrid} from './ProjectsGrid';
+export {DownloadMyCV} from './DownloadMyCV';
+export {LetsWorkTogether} from './LetsWorkTogether';
+export {AboutMe} from './AboutMe';

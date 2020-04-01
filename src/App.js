@@ -2,12 +2,8 @@ import React, {Fragment} from 'react';
 import './App.css';
 import {Container, Grid, ThemeProvider} from '@material-ui/core';
 import {createMuiTheme} from '@material-ui/core/styles';
-import Header from './components/Header';
-import MySkills from './components/MySkills';
-import ProjectsGrid from './components/ProjectsGrid';
-import AboutMe from './components/AboutMe';
-import DownloadMyCV from './components/DownloadMyCV';
-import LetsWorkTogether from './components/LetsWorkTogether';
+import {Header, MySkills, ProjectsGrid, AboutMe, DownloadMyCV, LetsWorkTogether} from './components';
+
 function App() {
   const theme = createMuiTheme({
     typography: {

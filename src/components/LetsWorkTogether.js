@@ -29,7 +29,7 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
           })
         }).then((res)=> setOpenedSnackbar(true));
       }
-      export default function LetsWorkTogether(){
+      export function LetsWorkTogether(){
         const form = {
     name: React.useRef(),
     companyName: React.useRef(),

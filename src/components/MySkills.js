@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid, Typography} from '@material-ui/core';
 import {skills} from '../helper';
 
-export default function MySkills(){
+export function MySkills(){
   const skillsList = skills.map((skill, index) => {
     return(
       <Box key={index} component="span" alignItems="center" style={{paddingLeft:10}}>
