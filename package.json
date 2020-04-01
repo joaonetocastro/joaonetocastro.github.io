@@ -12,6 +12,7 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-intl": "^4.3.1",
     "react-material-ui-form-validator": "^2.0.10",
     "react-scripts": "3.4.0"
   },
