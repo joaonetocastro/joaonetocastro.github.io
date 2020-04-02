@@ -32,10 +32,6 @@ export function Header(){
           <MenuItem value="en">English</MenuItem>
           <MenuItem value="pt">Português</MenuItem>
         </Select>
-        {/* <ButtonGroup> */}
-          {/* <Button onClick={()=>changeLanguage('en')} {... (currentLang === 'en' ? {color: 'primary'}: {})}>English</Button> */}
-          {/* <Button onClick={()=>changeLanguage('pt')} {... (currentLang === 'pt' ? {color: 'primary'}: {})}>Português</Button> */}
-        {/* </ButtonGroup> */}
       </Toolbar>
     </AppBar>
   );
