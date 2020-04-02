@@ -15,22 +15,20 @@ function App() {
   return (
     <Fragment>
       <ThemeProvider theme={theme}>
-
-      <Header />
-      <Container id="main-container" maxWidth="md">
-        <ProjectsGrid />
-        <MySkills />
-        <Grid container style={{margin: '1em', paddingRight: 10}}>
-          <Grid item sm>
-            <AboutMe />
+        <Header />
+        <Container id="main-container" maxWidth="md">
+          <ProjectsGrid />
+          <MySkills />
+          <Grid container style={{margin: '1em', paddingRight: 10}}>
+            <Grid item sm>
+              <AboutMe />
+            </Grid>
+            <Grid item sm>
+              <DownloadMyCV />
+            </Grid>
           </Grid>
-          <Grid item sm>
-            <DownloadMyCV />
-          </Grid>
-        </Grid>
-        <LetsWorkTogether/>
-        
-      </Container>
+          <LetsWorkTogether/>
+        </Container>
       </ThemeProvider>
     </Fragment>
   );

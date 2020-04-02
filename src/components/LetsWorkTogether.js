@@ -3,6 +3,7 @@ import {Box, Button, Typography, FormControl, TextField, FormGroup} from '@mater
 import Snackbar from '@material-ui/core/Snackbar';
 import Alert from '@material-ui/lab/Alert';
 import {makeStyles} from '@material-ui/core/styles';
+import {withNamespaces} from 'react-i18next';
 
 const getDataFromForm = (form) => {
   const formData = {};
@@ -29,7 +30,7 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
           })
         }).then((res)=> setOpenedSnackbar(true));
       }
-      export function LetsWorkTogether(){
+      export const LetsWorkTogether = withNamespaces()(({t}) =>{
         const form = {
     name: React.useRef(),
     companyName: React.useRef(),
@@ -52,7 +53,7 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
   return(
     <Box m={2} width={3/4}>
       <Typography variant="h5" component="h1">
-        Let's work together?
+        {t('letsWorkTogether.title')}
       </Typography>
       <form className={classes.root} onSubmit={(e) => sendEmail(e, form, setOpenedSnackbar)}>
         <FormGroup>
@@ -90,14 +91,14 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
                   inputRef={form.message}
                   multiline/>
         <Button color="primary" type="submit" variant="contained">
-          Send the message!
+          {t('letsWorkTogether.buttonText')}
         </Button> 
       </form>
       <Snackbar open={snackbarOpened} autoHideDuration={6000} onClose={setOpenedSnackbar}>
         <Alert severity="success" elevation={6} variant="filled" >
-          Your message has been sent
+          {t('letsWorkTogether.successMessage')}
         </Alert>
       </Snackbar>
     </Box>
   );
-}
+});

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Grid, Typography} from '@material-ui/core';
 import {skills} from '../helper';
+import {withNamespaces} from 'react-i18next';
 
-export function MySkills(){
+export const MySkills = withNamespaces()(({t}) =>{
   const skillsList = skills.map((skill, index) => {
     return(
       <Box key={index} component="span" alignItems="center" style={{paddingLeft:10}}>
@@ -17,7 +18,7 @@ export function MySkills(){
       <Grid>
         <Grid item xs={3}>
           <Typography variant="h5" component="span" style={{alignSelf: 'center', flexDirection: 'column'}}>
-            My Skills:
+            {t('mySkills.title')}
           </Typography>
         </Grid>
         <Grid item xs={9} style={{paddingTop: 20}}>
@@ -28,4 +29,4 @@ export function MySkills(){
       </Grid>
     </Box>
   );
-}
+});

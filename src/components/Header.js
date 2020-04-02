@@ -1,9 +1,16 @@
-import React from 'react';
-import {AppBar, Toolbar, Typography, Link, IconButton,} from '@material-ui/core';
+import React, {useState} from 'react';
+import {AppBar, Toolbar, Typography, Link, IconButton, ButtonGroup, Button} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import {LinkedIn as LinkedInIcon, GitHub as GitHubIcon} from '@material-ui/icons';
+import i18n from '../internalization/i18n';
 
 export function Header(){
+  const [currentLang, setCurrentLang] = useState(i18n.language);
+  const changeLanguage = (newLanguage) => {
+    i18n.changeLanguage(newLanguage);
+    setCurrentLang(newLanguage);
+  }
+  console.log(i18n.language);
   const classes = makeStyles({
     title: {
       flexGrow: 1,
@@ -13,7 +20,6 @@ export function Header(){
       marginRight: 25
     }
   })();
-  
   return (
     <AppBar position="static" color="default" elevation={0} >
       <Toolbar className={classes.toolbar}>
@@ -21,6 +27,10 @@ export function Header(){
           {'JOÃO NETO CASTRO'}
         </Typography>
         {socialMediaButtons()}
+        <ButtonGroup>
+          <Button onClick={()=>changeLanguage('en')} {... (currentLang === 'en' ? {color: 'primary'}: {})}>English</Button>
+          <Button onClick={()=>changeLanguage('pt')} {... (currentLang === 'pt' ? {color: 'primary'}: {})}>Português</Button>
+        </ButtonGroup>
       </Toolbar>
     </AppBar>
   );
