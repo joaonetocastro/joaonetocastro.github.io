@@ -61,21 +61,21 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
             <TextField required
                       id="name" 
                       name="name" 
-                      label="Your Name" 
+                      label={t('letsWorkTogether.formPlaceholders.name')}
                       variant="outlined" 
                       inputRef={form.name}
                       size="small"/>
             <TextField required
                       id="companyName" 
                       name="companyName" 
-                      label="Your company name" 
+                      label= {t('letsWorkTogether.formPlaceholders.companyName')}
                       variant="outlined" 
                       inputRef={form.companyName}
                       size="small"/>
             <TextField required
                       id="contactEmail" 
                       name="contactEmail" 
-                      label="Your email" 
+                      label= {t('letsWorkTogether.formPlaceholders.contactEmail')}
                       variant="outlined" 
                       inputRef={form.contactEmail}
                       size="small"/>
@@ -84,7 +84,7 @@ const sendEmail = (e, form, setOpenedSnackbar) => {
         <TextField required
                   id="message" 
                   name="message" 
-                  label="Your message" 
+                  label={t('letsWorkTogether.formPlaceholders.message')}
                   variant="outlined" 
                   size="small"
                   className={classes.message}

@@ -17,6 +17,12 @@
   "letsWorkTogether": {
     "title": "Vamos trabalhar juntos?",
     "buttonText": "Enviar Email",
-    "successMessage": "Seu email foi enviado"
+    "successMessage": "Seu email foi enviado",
+    "formPlaceholders": {
+      "name": "Seu nome",
+      "companyName": "Empresa",
+      "contactEmail": "Seu email",
+      "message": "Sua mensagem" 
+    }
   }
 }
