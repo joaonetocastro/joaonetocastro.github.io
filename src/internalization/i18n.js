@@ -25,7 +25,10 @@ i18n
       escapeValue: false // react already safes from xss
     },
     load: "languageOnly",
-    preload: ['en', 'pt']
+    preload: ['en', 'pt'],
+    detection: {
+      lookupQuerystring: "lng",
+    }
   });
 
 export default i18n;

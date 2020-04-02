@@ -3,15 +3,15 @@ import {AppBar, Toolbar, Select, MenuItem, Typography, Link, IconButton, ButtonG
 import {makeStyles} from '@material-ui/core/styles';
 import {LinkedIn as LinkedInIcon, GitHub as GitHubIcon} from '@material-ui/icons';
 import i18n from '../internalization/i18n';
-
+console.log();
 export function Header(){
-  const [currentLang, setCurrentLang] = useState(i18n.language);
+  const initialLanguage = i18n.language.includes('-') ? i18n.language.split('-')[0] : i18n.language;
+  const [currentLang, setCurrentLang] = useState(initialLanguage);
   const changeLanguage = (event) => {
     const newLanguage = event.target.value;
     i18n.changeLanguage(newLanguage);
     setCurrentLang(newLanguage);
   }
-  console.log(i18n.language);
   const classes = makeStyles({
     title: {
       flexGrow: 1,
