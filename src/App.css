@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #e6e6e6;  /* Fundo mais claro */
+  background-color: #e6e6e6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #3b3b3b; /* Card um pouco mais escuro */
+  background-color: #3b3b3b; 
   padding: 50px 20px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
